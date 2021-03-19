@@ -20,7 +20,7 @@ if(isset($_POST['cgemail'])){
     Thay đổi thông tin admin
 </div>
 <div style="background: #fff; padding: 20px; margin: auto; width: 350px; margin-top: 60px; border-radius: 3px; box-shadow: 0px 0px 3px 3px #95999c; ">
-    <div style="text-align: center;">  <H4>Thay đổi thông tin admin chan</H4></div>
+    <div style="text-align: center;">  <H4>Thay đổi thông tin admim</H4></div>
     <form method="post" action="#">
         <input style="display: none" type="text" value="dangnhap" name="see">
         <div class="form-group">
