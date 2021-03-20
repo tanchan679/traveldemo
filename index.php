@@ -18,9 +18,7 @@
         
         <?php session_start(); ?>
         <style>
-            body{
-                background-image: url('upload/hinh-anh-du-lich-ha-long.jpg');
-            }
+
         </style>
     </head>
     <body>

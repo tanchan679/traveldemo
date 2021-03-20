@@ -58,8 +58,8 @@ if(isset($_GET['edit'])){
                <td >'.$getlistpost[$count][1].'</td>
               <td style="color: #b21f2d;  font-weight: 500; text-align: center"> 
              <button onClick="deleteitemn(this.id)" class="btn btn-danger   "  id="'.$getlistpost[$count][0].'">Xóa</button>
-            <!--<a href="?chucnang=suathongtinsach&id='.$getlistpost[$count][0].'"><button  onClick="edititem(this.id)" id="'.$getlistpost[$count][0].'" class="btn btn-primary">Chỉnh sửa</button></a>
-                   -->  
+            <!--<a href="?select=edit&id='.$getlistpost[$count][0].'"><button  onClick="edititem(this.id)" id="'.$getlistpost[$count][0].'" class="btn btn-primary">Chỉnh sửa</button></a>
+                 -->  
                     
 </td>
             </tr>';

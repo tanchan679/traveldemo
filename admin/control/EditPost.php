@@ -1,4 +1,8 @@
 <?php
+include "../module/connectDatabase.php";
+$getconect = new connectDatabase();
+$getconect = $getconect->connect();
+$sql = "SELECT * FROM ";
 if(isset($_POST['title'])){
     $name = $_POST['title'];
     $pathav = "../upload/image/noavata.jpg";
@@ -20,9 +24,6 @@ if(isset($_POST['title'])){
             echo '<script>alert("ảnh đại diện phải có định dạng JPG, PNG")</script>';
         }
     }
-    include "../module/connectDatabase.php";
-    $getconect = new connectDatabase();
-    $getconect = $getconect->connect();
     $sql = "INSERT INTO posts values(null,'$name', '$pathav','$post')";
     mysqli_query($getconect, $sql);
     echo '<script>alert("Post has been added")</script>';

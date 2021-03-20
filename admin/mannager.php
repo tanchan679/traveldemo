@@ -119,7 +119,7 @@
                 else if($sl === 'thaydoithongtin') include "./control/thaydoithongtin.php";
                 else if($sl === 'commentManagement') include "./control/commentManagement.php";
                 else if($sl === 'UserManagement') include "./control/UserManagement.php";
-
+                else if($sl === 'edit') include "./control/EditPost.php";
             }else{
                 echo "<div style='color: #bb0000; width: 100%; height: 100%;'>
                             <div style='text-align: center; padding-top: 20%; font-weight: 500;font-size: 70px;'>
