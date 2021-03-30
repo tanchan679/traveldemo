@@ -38,7 +38,7 @@ if(isset($_GET['edit'])){
     <tr style="background: #fff; text-align: center">
         <td style="color: #cc0000; font-weight: 500">STT</td>
         <td style="color: #115095; font-weight: 500">Id</td>
-        <td style="color: #115095; font-weight: 500">Loại cmt</td>
+       <!-- <td style="color: #115095; font-weight: 500">Loại cmt</td> -->
         <td style="color: #115095; font-weight: 500">Người dùng</td>
         <td style="color: #115095; font-weight: 500">Id Bài viết</td>
         <td style="color: #115095; font-weight: 500">Nội dung Cmt</td>
@@ -55,12 +55,13 @@ if(isset($_GET['edit'])){
         echo '">
                 <td>'.$count.'</td>
                 <td style="text-align: center">'.$getlist[$count][1].'</td>';
-                if($getlist[$count][0] == 0)
+              /*  if($getlist[$count][0] == 0)
                 {
                     echo '<td style="text-align: center">Bài viết</td>';
                 }else{
                     echo '<td style="text-align: center">Điểm du lịch</td>';
-                }
+                }*/
+
                 echo '<td style="text-align: center">'.$getlist[$count][2].'</td>
                 <td style="text-align: center">'.$getlist[$count][3].'</td>
                 <td >'.$getlist[$count][4].'</td>

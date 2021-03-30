@@ -62,7 +62,7 @@ if(isset($_POST['title'])){
                     </td>
                 </tr>
                 <tr>
-                    <td style="background: #f2f2f2;">
+                    <td style="background: #f2f2f2; padding: 5px">
                         <label style="color: #000; font-weight: 500;" for="">Tiêu đề bài viết</label>
                         <input type="text" class="form-control"  id="password" required="" placeholder="enter post title" name="title">
                             <br>

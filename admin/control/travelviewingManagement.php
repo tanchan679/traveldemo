@@ -67,9 +67,9 @@ if(isset($_GET['edit'])){
               <td style="text-align: center">'.$getdata[$count][9].'</td>
               <td style="text-align: center">'.$getdata[$count][10].'</td>
               <td style="text-align: center">'.$getdata[$count][11].'</td>
-              <td style="color: #b21f2d;  font-weight: 500; text-align: center"> 
+              <td style="color: #b21f2d;  font-weight: 500; text-align: center; min-width: 200px;"> 
              <button onClick="deleteitemn(this.id)" class="btn btn-danger   "  id="'.$getdata[$count][0].'">Xóa</button>
-           <!--  <a href="?chucnang=suathongtinsach&id='.$getdata[$count][0].'"><button  onClick="edititem(this.id)" id="'.$getdata[$count][0].'" class="btn btn-primary">Chỉnh sửa</button></a> -->
+             <a href="?select=edittravel&id='.$getdata[$count][0].'"><button  onClick="edititem(this.id)" id="'.$getdata[$count][0].'" class="btn btn-primary">Chỉnh sửa</button></a> 
                      
                     
 </td>

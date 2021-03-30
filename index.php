@@ -7,7 +7,7 @@
         <link rel="icon" href="./upload/logodulichht.png">
         <link rel="stylesheet" href="./include/fontawesome/css/all.css">
         <link rel="stylesheet" href="./include/style/bootstrap.css">
-        <link rel="stylesheet" href="include/mystyle2.css">
+        <link rel="stylesheet" href="include/mystyle45646.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
@@ -84,6 +84,13 @@ The Socialist Republic of Vietnam, widely known as Vietnam, is not a strange nam
    </div>
 
 
+    <div class="article-composition">
+        <div class="container">
+
+        </div>
+    </div>
+
+<!--
    <div class="article-composition">
         <div class="container">
 
@@ -133,7 +140,12 @@ The Socialist Republic of Vietnam, widely known as Vietnam, is not a strange nam
 
             </div>
         </div>
+        -->
+
    </div>
+
+
     <?php include"./view/footer.php"; ?>
 </body>
 </html>
+

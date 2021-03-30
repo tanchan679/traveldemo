@@ -5,7 +5,8 @@
             <a href="./"><p style="color: #FF7610; float: left">Administrators</p></a>
         </div>
 
-        <form method="get" action="#">
+       <!--
+         <form method="get" action="#">
             <input name = "select" value="newposts" style="display: none">
             <button class="btnkgvien">
                 <div class="line-menu" style="color:#fff;">
@@ -13,6 +14,8 @@
                     Bài viết mới</div>
             </button>
         </form>
+       -->
+
         <form method="get" action="#">
             <input name = "select" value="travelviewing" style="display: none">
             <button class="btnkgvien">
@@ -22,6 +25,7 @@
             </button>
         </form>
 
+       <!--
         <form method="get" action="#">
             <input name = "select" value="postmanagement" style="display: none">
             <button class="btnkgvien">
@@ -30,6 +34,7 @@
                     Quản lý bài viết</div>
             </button>
         </form>
+       -->
         <form method="get" action="#">
             <input name = "select" value="travelviewingMana" style="display: none">
             <button class="btnkgvien">
@@ -110,8 +115,8 @@
             <?php
             if(isset($_GET['select'])){
                 $sl = $_GET['select'];
-                if($sl === 'newposts') include "./control/newposts.php";
-                else if($sl === 'travelviewing') include "./control/travelviewing.php";
+               // if($sl === 'newposts') include "./control/newposts.php";
+                 if($sl === 'travelviewing') include "./control/travelviewing.php";
                 else if($sl === 'postmanagement') include "./control/postmanagement.php";
                 else if($sl === 'travelviewingMana') include "./control/travelviewingManagement.php";
                 else if($sl === 'thaydoimatkhau') include "./control/thaydoimatkhau.php";
@@ -120,6 +125,10 @@
                 else if($sl === 'commentManagement') include "./control/commentManagement.php";
                 else if($sl === 'UserManagement') include "./control/UserManagement.php";
                 else if($sl === 'edit') include "./control/EditPost.php";
+               // else if($sl === 'edittravel') include "./control/EditTravelpost.php";
+                else if($sl === 'edituser') include "./control/quanlyuser.php";
+
+
             }else{
                 echo "<div style='color: #bb0000; width: 100%; height: 100%;'>
                             <div style='text-align: center; padding-top: 20%; font-weight: 500;font-size: 70px;'>

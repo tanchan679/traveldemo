@@ -64,8 +64,10 @@ if(isset($_GET['edit'])){
                 <td >'.$getlist[$count][5].'</td>
               <td style="color: #b21f2d;  font-weight: 500; text-align: center"> 
              <button onClick="deleteitemn(this.id)" class="btn btn-danger   "  id="'.$getlist[$count][0].'">Xóa</button>
-            <!--<a href="?chucnang=suathongtinsach&id='.$getlist[$count][0].'"><button  onClick="edititem(this.id)" id="'.$getlist[$count][0].'" class="btn btn-primary">Chỉnh sửa</button></a>
-                   -->  
+           <a href="?select=edituser&id='.$getlist[$count][0].'">
+                <button  id="'.$getlist[$count][0].'" class="btn btn-primary">Chỉnh sửa</button>
+            </a>
+                    
                     
 </td>
             </tr>';
@@ -78,13 +80,12 @@ if(isset($_GET['edit'])){
 
     </script>
 </table>
-
 <dialog id="xacnhanxoa" style="border: none; width: 500px;  box-shadow: 0px 0px 5px 5px #666; border-radius: 5px">
     <p style="font-size: 18px;">Bạn có thực sự muốn xóa mục này!!</p>
     <hr>
     <button class="btn btn-danger" style="float: right; margin-left: 10px; padding: 5px;" id="huydelete">Hủy</button>
     <form style="float: right">
-        <input name="select" value="UserManagement" style="display: none">
+        <input name="select" value="postmanagement" style="display: none">
         <input id = "dele" name="dele" value="" style="display: none">
         <button style="padding: 5px;" class="btn btn-primary" id="xacnhandelete">Xác nhận</button>
     </form>

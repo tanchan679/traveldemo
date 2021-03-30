@@ -2,10 +2,11 @@
 include "../module/connectDatabase.php";
 $getconect = new connectDatabase();
 $getconect = $getconect->connect();
-$sql = "SELECT * FROM ";
+$getid = $_GET['id'];
+$sql = "SELECT * FROM posts WHERE id = $getid";
+$getData = mysqli_fetch_assoc(mysqli_query($getconect, $sql));
 if(isset($_POST['title'])){
     $name = $_POST['title'];
-    $pathav = "../upload/image/noavata.jpg";
     $post=$_POST['post'];
 
     if($_FILES['imgInp']['error'] == 0)
@@ -20,20 +21,22 @@ if(isset($_POST['title'])){
             $pathav = "../upload/image/".$_FILES['imgInp']['name'];
             move_uploaded_file($file, $pathav);
             $pathav = substr($pathav, 1);
+            $sql = "UPDATE posts SET avatar='$pathav' where id=$getid";
+            mysqli_query($getconect, $sql);
         }else{
             echo '<script>alert("ảnh đại diện phải có định dạng JPG, PNG")</script>';
         }
     }
-    $sql = "INSERT INTO posts values(null,'$name', '$pathav','$post')";
+    $sql = "UPDATE posts SET name='$name', posts = '$post' where id=$getid";
     mysqli_query($getconect, $sql);
-    echo '<script>alert("Post has been added")</script>';
-    echo '<script>window.location="./?select=newposts";</script>';
+    echo '<script>alert("Bài viết đã được chỉnh sửa")</script>';
+    echo '<script>window.location="./?select=postmanagement";</script>';
  }
 ?>
 
 <div class="title-content" style="color: #eee;">
     <i style="margin-right: 5px" class="fas fa-plus-square"></i>
-    Thêm bài viết mới
+    Chỉnh sửa bài viết
 </div>
 <div class="content">
     <div class="row">
@@ -48,7 +51,7 @@ if(isset($_POST['title'])){
                 </tr>
                 <tr>
                     <td>
-                         <textarea name="post" id="cmt"></textarea>
+                         <textarea name="post" id="cmt"><?php echo $getData['posts']?></textarea>
                          <script> CKEDITOR.replace('cmt');</script>  
                     </td>
                 </tr>
@@ -63,9 +66,9 @@ if(isset($_POST['title'])){
                     </td>
                 </tr>
                 <tr>
-                    <td style="background: #f2f2f2;">
+                    <td style="background: #f2f2f2; padding: 5px;">
                         <label style="color: #000; font-weight: 500;" for="">Tiêu đề bài viết</label>
-                        <input type="text" class="form-control"  id="password" required="" placeholder="enter post title" name="title">
+                        <input type="text" class="form-control"  id="password" required="" value="<?php echo $getData['name'] ?>" placeholder="enter post title" name="title">
                             <br>
                          <div class="form-group">
                             <label style="color: #000; font-weight: 500;" for="">Ảnh đại diện cho bài viết</label><br>
@@ -75,7 +78,7 @@ if(isset($_POST['title'])){
 
                         <br><br>
                         <div style="width:100%; text-align:center" >        
-                         <button class="btn btn-danger">Tải lên bài viết</button></div> <br>
+                         <button class="btn btn-danger">Chỉnh sửa</button></div> <br>
                     </td>
                 </tr>
                 

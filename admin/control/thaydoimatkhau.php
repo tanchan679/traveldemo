@@ -15,7 +15,9 @@ if(isset($_POST['pass'])){
         $conn =  $getconect->connect();
         $getdata = mysqli_query($conn, "SELECT password from user where id = 0");
         $adminpass = mysqli_fetch_assoc($getdata)['password'];
+
         if($pass != $adminpass) echo '<script>alert("Thay đổi thất bại, mật khẩu xác nhận không đúng")</script>';
+
         else{
             mysqli_query($conn,"UPDATE user set password = '$newpass' where id = 0");
             echo '<script>alert("Mật khẩu đã được thay đổi thành công")</script>';
