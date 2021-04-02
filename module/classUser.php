@@ -1,6 +1,4 @@
 <?php
-
-
 class classUser
 {
     private $conect;
@@ -46,7 +44,7 @@ class classUser
             return false;
         }
     }
-    public function getUserByidg($email)
+    public function getUserByid($email)
 	{
 		if(!$this->conect){
 			return false;
