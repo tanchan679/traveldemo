@@ -46,6 +46,23 @@ class classUser
             return false;
         }
     }
+    public function getUserByidg($email)
+	{
+		if(!$this->conect){
+			return false;
+		}else{
+			$data = array(array());
+			$sql = "SELECT * from user where  email='$email'";
+			$getdata = mysqli_query($this->conect, $sql);
+			if(mysqli_num_rows($getdata) <= 0) return false;
+			else{
+				$datart = mysqli_fetch_assoc(mysqli_query($this->conect, $sql));
+				return $datart;
+			}
+			return $data;
+		}
+	return false;
+}
 }
 
 ?>

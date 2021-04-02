@@ -30,14 +30,10 @@
         }
        include "./control/xulythaydoimatkhau.php";
        include "./control/xulythaydoithongtin.php";
-       include "./module/connectDatabase.php";
-       
-       $getconect =  new connectDatabase();
-       $conn = $getconect->connect();
-       $getemail = $_SESSION['email'];
-       $sql = "SELECT * FROM USER where email='$getemail'";
-       $t = mysqli_query($conn, $sql);
-       $getdata = mysqli_fetch_assoc(mysqli_query($conn, $sql));
+       include "./module/classUser.php";
+        $getClass = new classUser();
+        $getemail = $_SESSION['email'];
+        $getdata = $getClass->getUserByid($getemail);
       
     ?>
     <div class = "container" style="margin-top: 50px; margin-bottom:50px">
