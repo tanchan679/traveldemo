@@ -1,4 +1,6 @@
 <?php
+
+
 class classUser
 {
     private $conect;
@@ -9,17 +11,18 @@ class classUser
         $this->conect = $this->conect->connect();
     }
 
-    public function getlistUser(){
-        if(!$this->conect){
+    public function getlistUser()
+    {
+        if (!$this->conect) {
             return false;
-        }else{
+        } else {
             $data = array(array());
             $sql = "SELECT * from user ";
             $getdata = mysqli_query($this->conect, $sql);
-            if(mysqli_num_rows($getdata) <= 0) return false;
-            else{
-                $dem=0;
-                while($linedata = mysqli_fetch_assoc($getdata)){
+            if (mysqli_num_rows($getdata) <= 0) return false;
+            else {
+                $dem = 0;
+                while ($linedata = mysqli_fetch_assoc($getdata)) {
                     $data[$dem][0] = $linedata['id'];
                     $data[$dem][1] = $linedata['email'];
                     $data[$dem][2] = $linedata['password'];
@@ -40,27 +43,25 @@ class classUser
         try {
             mysqli_query($this->conect, $sql);
             return true;
-        }catch (Exception $e) {
+        } catch (Exception $e) {
             return false;
         }
     }
     public function getUserByid($email)
-	{
-		if(!$this->conect){
-			return false;
-		}else{
-			$data = array(array());
-			$sql = "SELECT * from user where  email='$email'";
-			$getdata = mysqli_query($this->conect, $sql);
-			if(mysqli_num_rows($getdata) <= 0) return false;
-			else{
-				$datart = mysqli_fetch_assoc(mysqli_query($this->conect, $sql));
-				return $datart;
-			}
-			return $data;
-		}
-	return false;
+    {
+        if (!$this->conect) {
+            return false;
+        } else {
+            $data = array(array());
+            $sql = "SELECT * from user where  email='$email'";
+            $getdata = mysqli_query($this->conect, $sql);
+            if (mysqli_num_rows($getdata) <= 0) return false;
+            else {
+                $datart = mysqli_fetch_assoc(mysqli_query($this->conect, $sql));
+                return $datart;
+            }
+            return $data;
+        }
+        return false;
+    }
 }
-}
-
-?>

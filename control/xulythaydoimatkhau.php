@@ -23,5 +23,5 @@ class xulythaydoimatkhau {
         }
     }
 }
-
+$render = new xulythaydoimatkhau();
 ?>
