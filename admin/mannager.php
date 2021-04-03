@@ -125,7 +125,7 @@
                 else if($sl === 'commentManagement') include "./control/commentManagement.php";
                 else if($sl === 'UserManagement') include "./control/UserManagement.php";
                 else if($sl === 'edit') include "./control/EditPost.php";
-               // else if($sl === 'edittravel') include "./control/EditTravelpost.php";
+                else if($sl === 'edittravel') include "./control/EditTravelpost.php";
                 else if($sl === 'edituser') include "./control/quanlyuser.php";
 
 
