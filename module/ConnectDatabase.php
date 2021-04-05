@@ -1,5 +1,5 @@
 <?php
-   class connectDatabase {
+   class ConnectDatabase {
       
       private $servername;
       private $username;

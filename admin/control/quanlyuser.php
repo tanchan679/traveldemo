@@ -1,6 +1,6 @@
 <?php
     $getid = $_GET['id'];
-    include "../module/connectDatabase.php";
+    include "../module/ConnectDatabase.php";
     $getconect =  new connectDatabase();
     $conn = $getconect->connect();
     $sql = "SELECT * FROM USER where id= $getid";

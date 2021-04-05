@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['dele'])){
     $id = $_GET['dele'];
-    include "../module/classUser.php";
+    include "../module/ClassUser.php";
     $getlist  = new classUser();
     $getlist  = $getlist ->deleteUserByID($id);
 
@@ -45,7 +45,7 @@ if(isset($_GET['edit'])){
         <td style="color: #115095; font-weight: 500">Hành động</td>
     </tr>
     <?php
-    include "../module/classUser.php";
+    include "../module/ClassUser.php";
     $getlist  = new classUser();
     $getlist  = $getlist ->getlistUser();
     $sumcount = sizeof( $getlist);

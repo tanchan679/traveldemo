@@ -1,5 +1,5 @@
 <?php
-include "../module/connectDatabase.php";
+include "../module/ConnectDatabase.php";
 $getconect = new connectDatabase();
 $getconect = $getconect->connect();
 $getid = $_GET['id'];

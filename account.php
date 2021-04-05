@@ -30,7 +30,7 @@
         }
        include "./control/xulythaydoimatkhau.php";
        include "./control/xulythaydoithongtin.php";
-       include "./module/classUser.php";
+       include "./module/ClassUser.php";
         $getClass = new classUser();
         $getemail = $_SESSION['email'];
         $getdata = $getClass->getUserByid($getemail);

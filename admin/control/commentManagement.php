@@ -1,6 +1,6 @@
 <?php
-include "../module/classComment.php";
-$getlist  = new classComment();
+include "../module/comment.php";
+$getlist  = new comment();
 if(isset($_GET['dele'])){
     $id = $_GET['dele'];
     $classify = $_GET['classify'];

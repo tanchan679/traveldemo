@@ -1,10 +1,10 @@
 <?php
-    class travelpost
+    class travelPost
     {
         private $getconect;
         private $conect;
         function __construct() {
-            include "connectDatabase.php";
+            include "ConnectDatabase.php";
             $this->getconect = new connectDatabase();
             $this->conect = $this->getconect->connect();
          }

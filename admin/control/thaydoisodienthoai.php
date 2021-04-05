@@ -1,5 +1,5 @@
 <?php
-include "../module/connectDatabase.php";
+include "../module/ConnectDatabase.php";
 $getconect = new connectDatabase();
 $conn =  $getconect->connect();
 $sdt = mysqli_fetch_assoc(mysqli_query($conn, "SELECT phonenumber from user where id = 0"))['phonenumber'];

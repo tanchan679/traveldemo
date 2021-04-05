@@ -40,7 +40,7 @@
       if(isset( $_POST['email'])){
         $email = $_POST['email'];
         $pass =  $_POST['password'];
-        include "./module/classAccount.php";
+        include "./module/Account.php";
         $acccout = new Account();
         $access = $acccout->login($email,$pass);
         if($access === 0)  echo '<script>alert("Sign in failed, account and password is  wrong.....")</script>';

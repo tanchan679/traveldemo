@@ -45,8 +45,8 @@
     <h1 style="color: #DAA520;">	
 
     <?php
-         include './module/travelpost.php';
-         $getClass = new travelpost();
+         include './module/travelPost.php';
+         $getClass = new travelPost();
          $getidtravle = $_GET['id'];
          $getdata = $getClass->getTravelviewingByID($getidtravle);
          $getListcmt =  $getClass->getListcomment($getidtravle);

@@ -2,7 +2,7 @@
     class Account{
         public $getconect=false;
         function __construct(){
-            include "connectDatabase.php";
+            include "ConnectDatabase.php";
             $conectSQL = new connectDatabase();
             $this->getconect = $conectSQL->connect();
         }

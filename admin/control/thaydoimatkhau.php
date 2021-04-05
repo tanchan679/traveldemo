@@ -10,7 +10,7 @@ if(isset($_POST['pass'])){
         echo '<script>alert("Thay đổi thất bại, mật khẩu phải có trên 5 ký tự")</script>';
     }
     else{
-        include "../module/connectDatabase.php";
+        include "../module/ConnectDatabase.php";
         $getconect = new connectDatabase();
         $conn =  $getconect->connect();
         $getdata = mysqli_query($conn, "SELECT password from user where id = 0");

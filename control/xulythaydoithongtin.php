@@ -21,7 +21,7 @@ class xulythaydoithongtin {
                 $hl = false;
             }                                                             
             if($hl==true){
-                include "./module/classAccount.php";
+                include "./module/Account.php";
                 $accout = new Account();
                 $emal = $_SESSION['email'];
                 $access = $accout->ChangeInformation($emal, $name, $email, $phonenumber, $address);

@@ -1,12 +1,12 @@
 <?php
 
 
-class classUser
+class ClassUser
 {
     private $conect;
     public function __construct()
     {
-        include "connectDatabase.php";
+        include "ConnectDatabase.php";
         $this->conect = new connectDatabase();
         $this->conect = $this->conect->connect();
     }

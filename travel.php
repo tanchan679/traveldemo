@@ -104,8 +104,8 @@
             </table>
             <br>
                 <?php
-                    include './module/travelpost.php';
-                    $getClass = new travelpost();
+                    include './module/travelPost.php';
+                    $getClass = new travelPost();
                     $getdata = $getClass->getlistTraleviewing();
                     $sum = sizeof($getdata);
                     $count = 0;

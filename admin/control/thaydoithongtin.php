@@ -1,5 +1,5 @@
 <?php
-include "../module/connectDatabase.php";
+include "../module/ConnectDatabase.php";
 $getconect = new connectDatabase();
 $conn =  $getconect->connect();
 $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * from user where id = 0"));

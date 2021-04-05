@@ -1,8 +1,8 @@
 <?php
 if(isset($_GET['dele'])){
     $id = $_GET['dele'];
-    include "../module/travelpost.php";
-    $getlistpost  = new travelpost();
+    include "../module/travelPost.php";
+    $getlistpost  = new travelPost();
     $getlistpost  = $getlistpost ->DeleteByID($id);
     if($getlistpost== true) echo '<script>alert("Điểm du lịch đã được xóa!!")</script>';
     else echo '<script>alert("Điểm du lịch không thể xóa!!")</script>';
@@ -47,8 +47,8 @@ if(isset($_GET['edit'])){
         <td style="color: #115095; font-weight: 500">Hành động</td>
     </tr>
     <?php
-    include '../module/travelpost.php';
-    $getClass = new travelpost();
+    include '../module/travelPost.php';
+    $getClass = new travelPost();
     $getdata = $getClass->getlistTraleviewing();
     $sumcount = sizeof($getdata);
     $count = 0;

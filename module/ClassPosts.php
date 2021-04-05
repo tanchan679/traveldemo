@@ -3,7 +3,7 @@
         private $getconect;
         public function __construct()
         {
-            include "connectDatabase.php";
+            include "ConnectDatabase.php";
             $this->getconect = new connectDatabase();
             $this->getconect = $this->getconect->connect();
         }

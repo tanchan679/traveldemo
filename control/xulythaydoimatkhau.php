@@ -12,7 +12,7 @@ class xulythaydoimatkhau {
                 echo '<script>alert("Mật khẩu phải lớn hơn 5 ký t..")</script>';
                
             } else{
-                include "./module/classAccount.php";
+                include "./module/Account.php";
                 $accout = new Account();
                 $emal = $_SESSION['email'];
                 $access = $accout->ChangePassword($emal, $oldpass, $pass1);

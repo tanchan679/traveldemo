@@ -20,7 +20,7 @@ if(isset($_POST['title'])){
             echo '<script>alert("ảnh đại diện phải có định dạng JPG, PNG")</script>';
         }
     }
-    include "../module/connectDatabase.php";
+    include "../module/ConnectDatabase.php";
     $getconect = new connectDatabase();
     $getconect = $getconect->connect();
     $sql = "INSERT INTO posts values(null,'$name', '$pathav','$post')";

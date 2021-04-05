@@ -60,7 +60,7 @@ if(isset($_POST['title'])){
             echo '<script>alert("Tất cả ảnh phải có định dạng JPG, PNG")</script>';
         }
     }
-    include "../module/connectDatabase.php";
+    include "../module/ConnectDatabase.php";
     $getconect = new connectDatabase();
     $getconect = $getconect->connect();
     $sql = "INSERT INTO travelviewing values(null,'$name', '$pathav', '$pathav2', '$pathav3','$post', '$code', '$date',$time,'$startingplace','$ToLocation',$Numberofseats)";

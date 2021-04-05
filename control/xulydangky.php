@@ -31,7 +31,7 @@ class xulydangky
                 $hl = false;
             }
             if ($hl == true) {
-                include "./module/classAccount.php";
+                include "./module/Account.php";
                 $accout = new Account();
                 $access = $accout->Registration($email, $password, $name, $phonenumber, $address);
                 if ($access === true) {

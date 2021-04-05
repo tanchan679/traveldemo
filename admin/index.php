@@ -16,7 +16,7 @@
     if(isset($_POST['email'])){
         $taikhaon = $_POST['email'];
         $pass = $_POST['password'];
-        include "../module/connectDatabase.php";
+        include "../module/ConnectDatabase.php";
         $getconect = new connectDatabase();
         $getconect = $getconect->connect();
         $sql = "SELECT password FROM user where id=0";
