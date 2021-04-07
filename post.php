@@ -19,9 +19,9 @@
     </head>
     <body>
         
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
     <?php
-     include "./module/ClassPosts.php";
+    require_once "./module/ClassPosts-hide.php";
      $Posts = new ClassPosts();
      $getlistpost  = $Posts ->getlistTitleAndAvatar();
      $id = $_GET['id'];
@@ -123,7 +123,7 @@
             
         </div>
       </div>
-      <?php include"./view/footer.php"; ?>
+      <?php require_once"./view/footer.php"; ?>
    
 </body>
 </html>

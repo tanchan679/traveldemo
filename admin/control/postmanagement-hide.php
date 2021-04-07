@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['dele'])){
     $id = $_GET['dele'];
-    include "../module/ClassPosts.php";
+    include "../module/ClassPosts-hide.php";
     $getlistpost  = new ClassPosts();
     $getlistpost  = $getlistpost ->DeletePost($id);
     if($getlistpost== true) echo '<script>alert("Bài viết đã được xóa!!")</script>';
@@ -41,7 +41,7 @@ if(isset($_GET['edit'])){
         <td style="color: #115095; font-weight: 500">Hành động</td>
     </tr>
     <?php
-    include "../module/ClassPosts.php";
+    include "../module/ClassPosts-hide.php";
     $getlistpost  = new ClassPosts();
     $getlistpost  = $getlistpost ->getlistTitleAndAvatar();
     $sumcount = sizeof( $getlistpost);

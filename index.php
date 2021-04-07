@@ -23,7 +23,7 @@
     </head>
     <body>
         
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
 <div class="greeting">
  
 
@@ -105,7 +105,7 @@ The Socialist Republic of Vietnam, widely known as Vietnam, is not a strange nam
             
 
            <?php
-             include "./module/ClassPosts.php";
+            require_once "./module/ClassPosts-hide.php";
              $getlistpost  = new ClassPosts();
              $getlistpost  = $getlistpost ->getlistTitleAndAvatar();
              $sumcount = sizeof( $getlistpost);

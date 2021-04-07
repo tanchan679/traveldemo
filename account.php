@@ -20,17 +20,17 @@
         </style>
     </head>
     <body>
-    <?php include './view/header.html' ?>
+    <?php require_once './view/header.html' ?>
     <?php
         if(isset($_POST['logout'])){
-            include "./control/logout.php";
+            require_once "./control/logout.php";
             $logout = new Logout();
             $logout = $logout->logout();
             echo '<script>window.location="./";</script>';
         }
-       include "./control/xulythaydoimatkhau.php";
-       include "./control/xulythaydoithongtin.php";
-       include "./module/ClassUser.php";
+    require_once "./control/xulythaydoimatkhau.php";
+    require_once "./control/xulythaydoithongtin.php";
+    require_once "./module/ClassUser.php";
         $getClass = new classUser();
         $getemail = $_SESSION['email'];
         $getdata = $getClass->getUserByid($getemail);
@@ -183,6 +183,6 @@
         </div>
    </div>
 
-   <?php include"./view/footer.php";?>
+   <?php require_once"./view/footer.php";?>
 </body>
 </html>

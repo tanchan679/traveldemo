@@ -15,7 +15,7 @@
       
 </head>
 <body style="  background-image: url('upload/hinh-anh-du-lich-ha-long.jpg'); ">
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
     <br><br>
     <div style="width: 100%; margin-bottom: 30px; margin-top: 30px; ">
         <form class="from-dangky" method="post" action="#">
@@ -34,13 +34,13 @@
     </div>
     <br><br><br><br>
     <?php
-        include "./view/footer.php" 
+    require_once "./view/footer.php"
     ?>
     <?php
       if(isset( $_POST['email'])){
         $email = $_POST['email'];
         $pass =  $_POST['password'];
-        include "./module/Account.php";
+          require_once "./module/Account.php";
         $acccout = new Account();
         $access = $acccout->login($email,$pass);
         if($access === 0)  echo '<script>alert("Sign in failed, account and password is  wrong.....")</script>';

@@ -2,7 +2,7 @@
     class Account{
         public $getconect=false;
         function __construct(){
-            include "ConnectDatabase.php";
+            require_once "ConnectDatabase.php";
             $conectSQL = new connectDatabase();
             $this->getconect = $conectSQL->connect();
         }
@@ -81,3 +81,4 @@
 
     }
 ?>
+

@@ -38,14 +38,14 @@
     </head>
     <body style="background: #ddd;">
         
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
 
     <div class="container" >
     <br>
     <h1 style="color: #DAA520;">	
 
     <?php
-         include './module/travelPost.php';
+    require_once './module/travelPost.php';
          $getClass = new travelPost();
          $getidtravle = $_GET['id'];
          $getdata = $getClass->getTravelviewingByID($getidtravle);
@@ -57,7 +57,7 @@
             $cmt = $_POST['cmt'];
             $access = $getClass->addcomment($email,$post,$cmt);
             unset($_POST['cmt']);
-            echo '<script>window.location="./travelviewing.php?id='.$id.'";</script>';
+            echo '<script>window.location="./addTravel.php?id='.$id.'";</script>';
         }
 
         if ($getListcmt!=false) $getCount = sizeof($getListcmt);
@@ -68,12 +68,12 @@
        
 
     ?>
-      
+
 <?php echo $getdata[4]; ?></h1>
-<br><br>      
+<br><br>
 <div class="row">
             <div class="col-8">
-                                
+
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
 
 <!--Cho hiện thị chỉ số nếu muốn-->
@@ -90,18 +90,18 @@
     <!--Slide 1 thiết lập hiện thị đầu tiên .active-->
     <div class="carousel-item active">
         <img class="d-block w-100" style="width: 100%; height:400px; "  src="<?php echo $getdata[1]; ?>">
-        
+
     </div>
 
     <!--Slide 2-->
-    <div class="carousel-item"> 
+    <div class="carousel-item">
         <img  style="width: 100%; height:400px;" class="d-block w-100" src="<?php echo $getdata[2]; ?>">
     </div>
     <!--Slide 3-->
     <div class="carousel-item">
         <img  style="width: 100%; height:400px;" class="d-block w-100" src="<?php echo $getdata[3]; ?>">
     </div>
-    
+
 </div>
 
 
@@ -109,10 +109,10 @@
 <!--Cho thêm khiển chuyển slide trước, sau nếu muốn-->
     <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span></a>
     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
-<!--Hết tạo điều khiển chuyển Slide--> 
+<!--Hết tạo điều khiển chuyển Slide-->
 
 </div>
-        
+
 <!--Het-->
             </div>
             <div class="col-4"  style="background: #eee;">
@@ -150,7 +150,7 @@
             </div>
         </div>
         <br>
-    
+
         <!--talk about-->
         <div style="background: #eee; padding:15px">
             <h3>Talk about</h3>
@@ -171,13 +171,13 @@
                         else {
                             echo '<span>Please <a href="./login.php">login</a> to comment !!</span>';
                         }
-                       ?> 
-                       
+                       ?>
+
                         <hr>
                         <span style="font-size: 13px; margin-left:10px; position:relative; top:-20px;">Have all <?php echo $getCount ?> comments</span>
-                     
+
                      <?php
-                          
+
                             $dem=0;
                          while($dem++ < $getCount)  echo ' <div class="row" style="margin-top:10px">
                            <div class="col-1" style="text-align: center;">
@@ -194,7 +194,7 @@
         </div>
     </div>
     <br><br>
-    <?php include"./view/footer.php"; ?>
+    <?php require_once"./view/footer.php"; ?>
    
    </body>
    </html>

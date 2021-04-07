@@ -32,7 +32,7 @@
     </head>
     <body>
         
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
 
 
    <div class="article-composition">
@@ -104,7 +104,7 @@
             </table>
             <br>
                 <?php
-                    include './module/travelPost.php';
+                require_once './module/travelPost.php';
                     $getClass = new travelPost();
                     $getdata = $getClass->getlistTraleviewing();
                     $sum = sizeof($getdata);
@@ -113,11 +113,11 @@
                         echo ' <table class="box-posts">
                     <tr style="width: 100%;">
                         <td style="width: 35%;">
-                        <a href="./travelviewing.php?id='.$getdata[$count][0].'">  <img style="width: 100%; height:350px;  border-radius: 25px;" src="'.$getdata[$count][1].'"> </a>
+                        <a href="./addTravel.php?id='.$getdata[$count][0].'">  <img style="width: 100%; height:350px;  border-radius: 25px;" src="'.$getdata[$count][1].'"> </a>
                         </td>
                         <td style="width: 5%;"></td>
                         <td style="width: 60%;">
-                        <a href="./travelviewing.php?id='.$getdata[$count][0].'"> <div style="height: 40%;  line-height:80% ; ">
+                        <a href="./addTravel.php?id='.$getdata[$count][0].'"> <div style="height: 40%;  line-height:80% ; ">
                              <h2 style="margin-top: 55px;">
                             '.$getdata[$count][4].'
                                 </h2>
@@ -172,7 +172,7 @@
         </div>
    </div>
 
-   <?php include"./view/footer.php"; ?>
+   <?php require_once"./view/footer.php"; ?>
    
 </body>
 </html>

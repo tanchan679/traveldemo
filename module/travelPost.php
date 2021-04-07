@@ -4,7 +4,7 @@
         private $getconect;
         private $conect;
         function __construct() {
-            include "ConnectDatabase.php";
+            require_once "ConnectDatabase.php";
             $this->getconect = new connectDatabase();
             $this->conect = $this->getconect->connect();
          }
@@ -75,7 +75,7 @@
         
         public function addcomment($email, $post, $cmt)
         {
-         if(!$this->getconect){
+         if(!$this->conect){
              return false;
          }else{
                  $sql ="INSERT INTO comment_travelviewing values(NULL, '$email', $post, '$cmt')";

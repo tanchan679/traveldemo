@@ -1,13 +1,9 @@
 <?php
-require_once "../module/ConnectDatabase.php";
-$getconect = new connectDatabase();
-$getconect = $getconect->connect();
-$getid = $_GET['id'];
-$sql = "SELECT * FROM travelviewing WHERE id = $getid";
-$getData = mysqli_fetch_assoc(mysqli_query($getconect, $sql));
-
 if(isset($_POST['title'])){
     $name = $_POST['title'];
+    $pathav = "../upload/image/noavata.jpg";
+    $pathav2 = "../upload/image/noavata.jpg";
+    $pathav3 = "../upload/image/noavata.jpg";
     $post=$_POST['post'];
     $code =  $_POST['code'];
     $date=  $_POST['Dday'];
@@ -28,8 +24,6 @@ if(isset($_POST['title'])){
             $pathav = "../upload/image/".$_FILES['imgInp']['name'];
             move_uploaded_file($file, $pathav);
             $pathav = substr($pathav, 1);
-            $sql = "UPDATE travelviewing SET iva1='$pathav' where  id=$getid";
-            mysqli_query($getconect, $sql);
         }else{
             echo '<script>alert("Tất cả ảnh phải có định dạng JPG, PNG")</script>';
         }
@@ -46,8 +40,6 @@ if(isset($_POST['title'])){
             $pathav2 = "../upload/image/".$_FILES['imgInp2']['name'];
             move_uploaded_file($file, $pathav2);
             $pathav2 = substr($pathav2, 1);
-            $sql = "UPDATE travelviewing SET iva2='$pathav2' where  id=$getid";
-            mysqli_query($getconect, $sql);
         }else{
             echo '<script>alert("Tất cả ảnh phải có định dạng JPG, PNG")</script>';
         }
@@ -64,19 +56,16 @@ if(isset($_POST['title'])){
             $pathav3= "../upload/image/".$_FILES['imgInp3']['name'];
             move_uploaded_file($file, $pathav3);
             $pathav3 = substr($pathav3, 1);
-            $sql = "UPDATE travelviewing SET iva3='$pathav3' where  id=$getid ";
-            mysqli_query($getconect, $sql);
         }else{
             echo '<script>alert("Tất cả ảnh phải có định dạng JPG, PNG")</script>';
         }
     }
-
     require_once "./module/TraveModule.php";
-    $travelmudule  = new TraveModule();
-    $return  = $travelmudule -> editTravel($name,$post,$code,$date,$time,$startingplace,$ToLocation,$Numberofseats,$getid);
-    if($return) echo '<script>alert("Chỉnh sửa hoàn thành")</script>';
-    else  echo '<script>alert("Chỉnh sửa không thành công")</script>';
-   echo '<script>window.location="./?select=travelviewingMana";</script>';
+    $travel = new TraveModule();
+    $return = $travel->addTravel($name, $pathav, $pathav2, $pathav3,$post, $code, $date,$time,$startingplace,$ToLocation,$Numberofseats);
+    if(false==true) echo '<script>alert("Địa điểm đã được thêm")</script>';
+    else  echo '<script>alert("Địa điểm chưa được thêm")</script>';
+   echo '<script>window.location="./?select=travelviewing";</script>';
 }
-require_once "./views/editTravelView.html"
+require_once "./views/addTravelView.html";
 ?>

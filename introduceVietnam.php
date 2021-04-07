@@ -17,7 +17,7 @@
         </style>
     </head>
     <body>
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
 
 
    <div class="article-composition" style="">
@@ -46,7 +46,7 @@
    </div>
 
 
-   <?php include "./view/footer.php"; ?>
+   <?php require_once "./view/footer.php"; ?>
    
 </body>
 </html>

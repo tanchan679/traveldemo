@@ -19,7 +19,7 @@
         </style>
     </head>
     <body>
-    <?php include "./view/header.html" ?>
+    <?php require_once "./view/header.html" ?>
 
 
    <div class="article-composition">
@@ -31,7 +31,7 @@
                  <p style="color:#333;font-family: 'ZCOOL QingKe HuangYou', cursive; font-weight:400; font-size:30px; ">Address: ĐHCNTT&TT Thái Nguyên - Đại học Thái Nguyên</p>
             </div>
    </div>
-        <?php include "./view/footer.php" ?>
+        <?php require_once "./view/footer.php" ?>
    
 </body>
 </html>

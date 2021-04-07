@@ -10,7 +10,7 @@ class xulydangky
             $name = $_POST['name'];
             $address = $_POST['address'];
             $phonenumber = $_POST['phonenumber'];
-            include "include/classnumber.php";
+            require_once "include/classnumber.php";
             $classnumber = new classnumber;
             $hl = true;
             if (strlen(strstr($email, "@")) <= 0 || strlen(strstr($email, ".")) <= 0) {
