@@ -61,7 +61,7 @@
 
                 mysqli_query($this->getconect, $sql);
                 return true;
-            }catch (Exception $e) {
+            } catch (Exception $e) {
                 return false;
             }
         }
@@ -70,7 +70,7 @@
         {
          if(!$this->getconect){
              return false;
-         }else{
+         } else {
                  $sql ="INSERT INTO comment values(NULL, '$email', $post, '$cmt')";
                  mysqli_query($this->getconect, $sql);
                  return true;
@@ -107,4 +107,3 @@
 
 
     }
-?>

@@ -1,12 +1,12 @@
 <?PHP
-    class Account{
+    class Account {
         public $getconect=false;
         function __construct(){
             require_once "ConnectDatabase.php";
             $conectSQL = new connectDatabase();
             $this->getconect = $conectSQL->connect();
         }
-        function login($email, $pass){
+        public function login($email, $pass){
             if(!$this->getconect){
                 return 0;
             }else{
@@ -27,7 +27,7 @@
             }else{
                 $sql="select * from user where email='$email'";
                 $kt=mysqli_query($this->getconect, $sql);
-                if(mysqli_num_rows($kt)  > 0){
+                if(mysqli_num_rows($kt)  > 0) {
                     return false;
                 }else{
                     $sql ="INSERT INTO user values(NULL, '$email', '$password', '$name', '$phonenumber', '$address')";
@@ -62,14 +62,15 @@
 
         public function ChangeInformation($email, $name, $newemail, $phonenb, $address)
         {
-            if(!$this->getconect){
+            if(!$this->getconect) {
                 return false;
-            }else{
+            } else {
                 $sql="select email from user where email='$email'";
                 $kt=mysqli_query($this->getconect, $sql);
                 if(mysqli_num_rows($kt)  == 0){
                     return false;
-                }else{
+                }
+                else {
                     $sql="UPDATE user SET email = '$newemail', name='$name', phonenumber='$phonenb', address='$address'  where email='$email'";
                     mysqli_query($this->getconect, $sql);
                     $_SESSION['email'] = $newemail;
@@ -78,7 +79,6 @@
             }
             return false;
         }
-
     }
 ?>
 
