@@ -4,7 +4,7 @@
         private $getconect;
         private $conect;
         function __construct() {
-            include "ConnectDatabase.php";
+            require_once "ConnectDatabase.php";
             $this->getconect = new connectDatabase();
             $this->conect = $this->getconect->connect();
          }

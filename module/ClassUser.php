@@ -6,7 +6,7 @@ class ClassUser
     private $conect;
     public function __construct()
     {
-        include "ConnectDatabase.php";
+        require_once "ConnectDatabase.php";
         $this->conect = new connectDatabase();
         $this->conect = $this->conect->connect();
     }

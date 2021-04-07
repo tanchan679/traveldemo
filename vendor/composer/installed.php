@@ -6,11 +6,20 @@
     'aliases' => 
     array (
     ),
-    'reference' => '1110d36038f78017bbbd1277eee5fffcb2488a61',
+    'reference' => '4e5f562a71e54531f67d21cbca703f2d9a805ee2',
     'name' => 'm134m/traveldemo',
   ),
   'versions' => 
   array (
+    'applitools/eyes.sdk.php' => 
+    array (
+      'pretty_version' => 'v1.3.3',
+      'version' => '1.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7142a229c4ce641ef16f45405eec72ceb0ba29a3',
+    ),
     'doctrine/instantiator' => 
     array (
       'pretty_version' => '1.4.0',
@@ -20,6 +29,13 @@
       ),
       'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
     ),
+    'facebook/webdriver' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
+    ),
     'm134m/traveldemo' => 
     array (
       'pretty_version' => 'dev-main',
@@ -27,7 +43,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '1110d36038f78017bbbd1277eee5fffcb2488a61',
+      'reference' => '4e5f562a71e54531f67d21cbca703f2d9a805ee2',
     ),
     'myclabs/deep-copy' => 
     array (
@@ -68,6 +84,15 @@
       array (
       ),
       'reference' => 'bae7c545bef187884426f042434e561ab1ddb182',
+    ),
+    'php-webdriver/webdriver' => 
+    array (
+      'pretty_version' => '1.10.0',
+      'version' => '1.10.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cd9290b95b7651d495bd69253d6e3ef469a7f211',
     ),
     'phpdocumentor/reflection-common' => 
     array (
@@ -311,6 +336,33 @@
       array (
       ),
       'reference' => 'c6c942b1ac76c82448322025e084cadc56048b4e',
+    ),
+    'symfony/polyfill-mbstring' => 
+    array (
+      'pretty_version' => 'v1.22.1',
+      'version' => '1.22.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5232de97ee3b75b0360528dae24e73db49566ab1',
+    ),
+    'symfony/polyfill-php80' => 
+    array (
+      'pretty_version' => 'v1.22.1',
+      'version' => '1.22.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'dc3063ba22c2a1fd2f45ed856374d79114998f91',
+    ),
+    'symfony/process' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '313a38f09c77fbcdc1d223e57d368cea76a2fd2f',
     ),
     'theseer/tokenizer' => 
     array (

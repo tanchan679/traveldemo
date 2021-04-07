@@ -7,7 +7,7 @@ class Comment
 
     public function __construct()
     {
-        include "ConnectDatabase.php";
+        require_once "ConnectDatabase.php";
         $this->conect = new connectDatabase();
         $this->conect = $this->conect->connect();
     }
@@ -48,7 +48,7 @@ class Comment
                         $data[$dem][3]=$data1['id_post'];
                         $data[$dem][4]=$data1['cmt'];
                         $dem++;
-                    }else{
+                    } else {
                         if($check==1) break;
                         else $check2=1;
                     }
