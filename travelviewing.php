@@ -57,7 +57,7 @@
             $cmt = $_POST['cmt'];
             $access = $getClass->addcomment($email,$post,$cmt);
             unset($_POST['cmt']);
-            echo '<script>window.location="./addTravel.php?id='.$id.'";</script>';
+            echo '<script>window.location="./travelviewing.php?id='.$id.'";</script>';
         }
 
         if ($getListcmt!=false) $getCount = sizeof($getListcmt);

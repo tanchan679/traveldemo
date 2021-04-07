@@ -113,11 +113,11 @@
                         echo ' <table class="box-posts">
                     <tr style="width: 100%;">
                         <td style="width: 35%;">
-                        <a href="./addTravel.php?id='.$getdata[$count][0].'">  <img style="width: 100%; height:350px;  border-radius: 25px;" src="'.$getdata[$count][1].'"> </a>
+                        <a href="./travelviewing.php?id='.$getdata[$count][0].'">  <img style="width: 100%; height:350px;  border-radius: 25px;" src="'.$getdata[$count][1].'"> </a>
                         </td>
                         <td style="width: 5%;"></td>
                         <td style="width: 60%;">
-                        <a href="./addTravel.php?id='.$getdata[$count][0].'"> <div style="height: 40%;  line-height:80% ; ">
+                        <a href="./travelviewing.php?id='.$getdata[$count][0].'"> <div style="height: 40%;  line-height:80% ; ">
                              <h2 style="margin-top: 55px;">
                             '.$getdata[$count][4].'
                                 </h2>
