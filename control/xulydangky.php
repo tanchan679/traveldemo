@@ -1,18 +1,18 @@
+
 <?php
-class xulydangky
-{
-    function __construct()
-    {
+
         if (isset($_POST['name'])) {
+            echo $_POST['name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
             $password2 = $_POST['password2'];
             $name = $_POST['name'];
             $address = $_POST['address'];
             $phonenumber = $_POST['phonenumber'];
-            require_once "include/classnumber.php";
+            require_once "./include/classnumber.php";
             $classnumber = new classnumber;
             $hl = true;
+
             if (strlen(strstr($email, "@")) <= 0 || strlen(strstr($email, ".")) <= 0) {
                 echo '<script>document.getElementById("emaill").style.display = "block"</script>';
                 $hl = false;
@@ -22,6 +22,7 @@ class xulydangky
                 $hl = false;
             }
             if ($password != $password2) {
+                echo "hmm";
                 echo '<script>document.getElementById("passerror").style.display = "block"</script>';
                 $hl = false;
             } elseif (strlen($password) < 5) {
@@ -36,14 +37,11 @@ class xulydangky
                 $access = $accout->Registration($email, $password, $name, $phonenumber, $address);
                 if ($access === true) {
                     $_SESSION['email'] = $email;
-                    echo '<script>alert("Account has been registered...")</script>';
+
                     echo '<script>window.location="./";</script>';
                 } else {
-                    echo '<script>alert("registration failed...")</script>';
+
                 }
             }
         }
-    }
-}
-
-$render = new xulydangky();
+            ?>

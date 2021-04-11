@@ -25,7 +25,7 @@
                 <input type="text" class="form-control"  id="email" required="" placeholder="nguyenvana@gmail.com" name="email">
             </div>
             <div class="form-group">
-                <label style="color: #f2f2f2;" for="">password</label>
+                <label for="password" style="color: #f2f2f2;" >password</label>
                 <input type="password" class="form-control"  id="password" required="" placeholder="Enter your password" name="password">
             </div>
             <div style="text-align: center"><button style="margin-top: 10px;" class="btn btn-secondary">Login</button></div>
@@ -46,7 +46,7 @@
         if($access === 0)  echo '<script>alert("Sign in failed, account and password is  wrong.....")</script>';
         else{
             $_SESSION['email'] = $access;
-            echo '<script>window.location="./account.php";</script>';
+            echo '<script>window.location="./";</script>';
         }
       }
     ?>

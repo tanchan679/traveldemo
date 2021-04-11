@@ -15,11 +15,13 @@
         <?php session_start(); ?>
 </head>
 <body style=" background-image: url('upload/hinh-anh-du-lich-ha-long.jpg');">
-    <?php require_once "./control/xulydangky.php" ?>
-    <?php require_once "./view/header.html" ?>
-    <?php require_once "./view/registrationform.html" ?>
+
+<?php include "./view/header.html" ?>
+<?php include "./view/registrationform.html" ?>
     <?php
-    require_once "./view/footer.php";
+    include "./control/xulydangky.php"
     ?>
+
+    <?php require_once "./view/footer.php"; ?>
 </body>
 </html>
