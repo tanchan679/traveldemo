@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="acceptance" tests="19" assertions="18" errors="0" failures="6" skipped="0" time="66.697226">
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangeInformation1Cest.php" name="tryToTest" class="ChangeInformation1Cest" feature="try to test" assertions="1" time="8.415418"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangeInformation2Cest.php" name="tryToTest" class="ChangeInformation2Cest" feature="try to test" assertions="1" time="4.872606"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangeInformation3Cest.php" name="tryToTest" class="ChangeInformation3Cest" feature="try to test" assertions="1" time="3.268446">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">ChangeInformation3Cest: Try to test
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Change information failed'
++'Change information success'
+
+C:\xampp\htdocs\traveldemo\tests\_support\_generated\AcceptanceTesterActions.php:1289
+C:\xampp\htdocs\traveldemo\tests\acceptance\ChangeInformation3Cest.php:20
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept(21) : eval()'d code:6
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept:21
+</failure>
+    </testcase>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangeInformation4Cest.php" name="tryToTest" class="ChangeInformation4Cest" feature="try to test" assertions="1" time="3.371201">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">ChangeInformation4Cest: Try to test
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Change information failed'
++'Change information success'
+
+C:\xampp\htdocs\traveldemo\tests\_support\_generated\AcceptanceTesterActions.php:1289
+C:\xampp\htdocs\traveldemo\tests\acceptance\ChangeInformation4Cest.php:20
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept(21) : eval()'d code:6
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept:21
+</failure>
+    </testcase>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangePassword1Cest.php" name="tryToTest" class="ChangePassword1Cest" feature="try to test" assertions="1" time="5.210336"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangePassword2Cest.php" name="tryToTest" class="ChangePassword2Cest" feature="try to test" assertions="1" time="3.125521"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangePassword3Cest.php" name="tryToTest" class="ChangePassword3Cest" feature="try to test" assertions="1" time="3.320877"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\ChangePassword4Cest.php" name="tryToTest" class="ChangePassword4Cest" feature="try to test" assertions="1" time="3.367415"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Comment1Cest.php" name="tryToTest" class="Comment1Cest" feature="try to test" assertions="0" time="4.995804"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Comment2Cest.php" name="tryToTest" class="Comment2Cest" feature="try to test" assertions="1" time="4.289096">
+      <failure type="PHPUnit\Framework\AssertionFailedError">Comment2Cest: Try to test
+Comment null but still appear on list
+
+C:\xampp\htdocs\traveldemo\tests\_support\_generated\AcceptanceTesterActions.php:5774
+C:\xampp\htdocs\traveldemo\tests\acceptance\Comment2Cest.php:21
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept(21) : eval()'d code:6
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept:21
+</failure>
+    </testcase>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Comment3Cest.php" name="tryToTest" class="Comment3Cest" feature="try to test" assertions="1" time="4.490295">
+      <failure type="PHPUnit\Framework\AssertionFailedError">Comment3Cest: Try to test
+Comment contain some script
+
+C:\xampp\htdocs\traveldemo\tests\_support\_generated\AcceptanceTesterActions.php:5774
+C:\xampp\htdocs\traveldemo\tests\acceptance\Comment3Cest.php:22
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept(21) : eval()'d code:6
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept:21
+</failure>
+    </testcase>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Register1Cest.php" name="tryToTest" class="Register1Cest" feature="try to test" assertions="1" time="2.746466"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Register2Cest.php" name="tryToTest" class="Register2Cest" feature="try to test" assertions="1" time="2.450477"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Register3Cest.php" name="tryToTest" class="Register3Cest" feature="try to test" assertions="1" time="2.546579">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Register3Cest: Try to test
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Register failed'
++'Register success'
+
+C:\xampp\htdocs\traveldemo\tests\_support\_generated\AcceptanceTesterActions.php:1289
+C:\xampp\htdocs\traveldemo\tests\acceptance\Register3Cest.php:20
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept(21) : eval()'d code:6
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept:21
+</failure>
+    </testcase>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\Register4Cest.php" name="tryToTest" class="Register4Cest" feature="try to test" assertions="1" time="2.722705">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Register4Cest: Try to test
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Register failed'
++'Register success'
+
+C:\xampp\htdocs\traveldemo\tests\_support\_generated\AcceptanceTesterActions.php:1289
+C:\xampp\htdocs\traveldemo\tests\acceptance\Register4Cest.php:17
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept(21) : eval()'d code:6
+C:\xampp\htdocs\traveldemo\vendor\bin\codecept:21
+</failure>
+    </testcase>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\SignIn1Cest.php" name="tryToTest" class="SignIn1Cest" feature="try to test" assertions="1" time="1.855750"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\SignIn2Cest.php" name="tryToTest" class="SignIn2Cest" feature="try to test" assertions="1" time="1.948886"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\SignIn3Cest.php" name="tryToTest" class="SignIn3Cest" feature="try to test" assertions="1" time="1.837804"/>
+    <testcase file="C:\xampp\htdocs\traveldemo\tests\acceptance\SignIn4Cest.php" name="tryToTest" class="SignIn4Cest" feature="try to test" assertions="1" time="1.861544"/>
+  </testsuite>
+</testsuites>

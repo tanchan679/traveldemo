@@ -7,11 +7,22 @@ namespace Composer\Autoload;
 class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
 {
     public static $files = array (
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        'e88992873b7765f9b5710cab95ba5dd7' => __DIR__ . '/..' . '/hoa/consistency/Prelude.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '3e76f7f02b41af8cea96018933f6b7e3' => __DIR__ . '/..' . '/hoa/protocol/Wrapper.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '2a3c2110e8e0295330dc3d11a4cbc4cb' => __DIR__ . '/..' . '/php-webdriver/webdriver/lib/Exception/TimeoutException.php',
     );
 
@@ -27,14 +38,49 @@ class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
+            'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Contracts\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\Finder\\' => 25,
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\DomCrawler\\' => 29,
+            'Symfony\\Component\\CssSelector\\' => 30,
+            'Symfony\\Component\\Console\\' => 26,
+            'Symfony\\Component\\BrowserKit\\' => 29,
         ),
         'P' => 
         array (
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
+            'Psr\\EventDispatcher\\' => 20,
+            'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
+        ),
+        'H' => 
+        array (
+            'Hoa\\Ustring\\' => 12,
+            'Hoa\\Stream\\' => 11,
+            'Hoa\\Protocol\\' => 13,
+            'Hoa\\Iterator\\' => 13,
+            'Hoa\\File\\' => 9,
+            'Hoa\\Exception\\' => 14,
+            'Hoa\\Event\\' => 10,
+            'Hoa\\Console\\' => 12,
+            'Hoa\\Consistency\\' => 16,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
         'F' => 
         array (
@@ -44,6 +90,12 @@ class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'C' => 
+        array (
+            'Codeception\\PHPUnit\\' => 20,
+            'Codeception\\Extension\\' => 22,
+            'Codeception\\' => 12,
         ),
     );
 
@@ -62,17 +114,85 @@ class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
+        'Symfony\\Polyfill\\Php73\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
+        ),
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Contracts\\Service\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/service-contracts',
+        ),
+        'Symfony\\Contracts\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
+        ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\String\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/string',
+        ),
         'Symfony\\Component\\Process\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Symfony\\Component\\DomCrawler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
+        ),
+        'Symfony\\Component\\CssSelector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Symfony\\Component\\BrowserKit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/browser-kit',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'Psr\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Prophecy\\' => 
         array (
@@ -81,6 +201,54 @@ class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Hoa\\Ustring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/ustring',
+        ),
+        'Hoa\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/stream',
+        ),
+        'Hoa\\Protocol\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/protocol',
+        ),
+        'Hoa\\Iterator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/iterator',
+        ),
+        'Hoa\\File\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/file',
+        ),
+        'Hoa\\Exception\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/exception',
+        ),
+        'Hoa\\Event\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/event',
+        ),
+        'Hoa\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/console',
+        ),
+        'Hoa\\Consistency\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hoa/consistency',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Facebook\\WebDriver\\' => 
         array (
@@ -94,167 +262,70 @@ class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Codeception\\PHPUnit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeception/phpunit-wrapper/src',
+        ),
+        'Codeception\\Extension\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeception/codeception/ext',
+        ),
+        'Codeception\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
+            1 => __DIR__ . '/..' . '/codeception/stub/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'B' => 
+        array (
+            'Behat\\Gherkin' => 
+            array (
+                0 => __DIR__ . '/..' . '/behat/gherkin/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
         'Account' => __DIR__ . '/../..' . '/module/Account.php',
-        'Applitools\\ActualAppOutput' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/ActualAppOutput.php',
-        'Applitools\\Annotations' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/Annotations.php',
-        'Applitools\\AppEnvironment' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/AppEnvironment.php',
-        'Applitools\\AppOutput' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/AppOutput.php',
-        'Applitools\\AppOutputProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/AppOutputProvider.php',
-        'Applitools\\AppOutputProviderRedeclared' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/AppOutputProviderRedeclared.php',
-        'Applitools\\AppOutputWithScreenshot' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/AppOutputWithScreenshot.php',
-        'Applitools\\AppiumJsCommandExtractor' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/AppiumJsCommandExtractor.php',
-        'Applitools\\ArgumentGuard' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/ArgumentGuard.php',
-        'Applitools\\BaselineEnv' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/BaselineEnv.php',
-        'Applitools\\BatchInfo' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/BatchInfo.php',
-        'Applitools\\Branch' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/Branch.php',
-        'Applitools\\CompareAndCopyBlockChannelDataResult' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/CompareAndCopyBlockChannelDataResult.php',
-        'Applitools\\CoordinatesType' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/CoordinatesType.php',
-        'Applitools\\CutProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/CutProvider.php',
-        'Applitools\\DebugScreenshotsProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/debug/DebugScreenshotsProvider.php',
-        'Applitools\\ExactMatchSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/ExactMatchSettings.php',
-        'Applitools\\Exceptions\\CoordinatesTypeConversionException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/exceptions/CoordinatesTypeConversionException.php',
-        'Applitools\\Exceptions\\DiffsFoundException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/exceptions/DiffsFoundException.php',
-        'Applitools\\Exceptions\\EyesException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/exceptions/EyesException.php',
-        'Applitools\\Exceptions\\IllegalStateException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/exceptions/IllegalStateException.php',
-        'Applitools\\Exceptions\\NewTestException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/exceptions/NewTestException.php',
-        'Applitools\\Exceptions\\OutOfBoundsException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/exceptions/OutOfBoundsException.php',
-        'Applitools\\Exceptions\\TestFailedException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/exceptions/TestFailedException.php',
-        'Applitools\\ExpectedAppOutput' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/ExpectedAppOutput.php',
-        'Applitools\\EyesBase' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/EyesBase.php',
-        'Applitools\\EyesImagesScreenshot' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.images.php/EyesImagesScreenshot.php',
-        'Applitools\\EyesScreenshot' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/EyesScreenshot.php',
-        'Applitools\\EyesScreenshotFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/EyesScreenshotFactory.php',
-        'Applitools\\FailureReports' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/FailureReports.php',
-        'Applitools\\FileDebugScreenshotsProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/debug/FileDebugScreenshotsProvider.php',
-        'Applitools\\FileLogger' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/logging/FileLogger.php',
-        'Applitools\\FixedCutProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/FixedCutProvider.php',
-        'Applitools\\FixedScaleProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/scaling/FixedScaleProvider.php',
-        'Applitools\\FixedScaleProviderFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/scaling/FixedScaleProviderFactory.php',
-        'Applitools\\FloatingMatchSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/FloatingMatchSettings.php',
-        'Applitools\\GeneralUtils' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/GeneralUtils.php',
-        'Applitools\\ImageDeltaCompressor' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/ImageDeltaCompressor.php',
-        'Applitools\\ImageIdentifier' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/ImageIdentifier.php',
-        'Applitools\\ImageMatchSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/ImageMatchSettings.php',
-        'Applitools\\ImageProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/ImageProvider.php',
-        'Applitools\\ImageUtils' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/ImageUtils.php',
-        'Applitools\\Images\\Eyes' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.images.php/Eyes.php',
-        'Applitools\\ImgMatchSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/ImgMatchSettings.php',
-        'Applitools\\InvalidPositionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/InvalidPositionProvider.php',
-        'Applitools\\Location' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/Location.php',
-        'Applitools\\LogHandler' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/logging/LogHandler.php',
-        'Applitools\\Logger' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/logging/Logger.php',
-        'Applitools\\MatchLevel' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/MatchLevel.php',
-        'Applitools\\MatchResult' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/MatchResult.php',
-        'Applitools\\MatchWindowData' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/MatchWindowData.php',
-        'Applitools\\MatchWindowTask' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/MatchWindowTask.php',
-        'Applitools\\MouseAction' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/MouseAction.php',
-        'Applitools\\MouseTrigger' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/triggers/MouseTrigger.php',
-        'Applitools\\NullCutProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/NullCutProvider.php',
-        'Applitools\\NullDebugScreenshotProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/debug/NullDebugScreenshotProvider.php',
-        'Applitools\\NullLogHandler' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/logging/NullLogHandler.php',
-        'Applitools\\NullRegionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/NullRegionProvider.php',
-        'Applitools\\NullScaleProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/scaling/NullScaleProvider.php',
-        'Applitools\\Options' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/match/Options.php',
-        'Applitools\\PositionMemento' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/PositionMemento.php',
-        'Applitools\\PositionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/PositionProvider.php',
-        'Applitools\\PrintLogHandler' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/logging/PrintLogHandler.php',
-        'Applitools\\PropertyData' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/PropertyData.php',
-        'Applitools\\PropertyHandler' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/PropertyHandler.php',
-        'Applitools\\ProxySettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/ProxySettings.php',
-        'Applitools\\ReadOnlyPropertyHandler' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/ReadOnlyPropertyHandler.php',
-        'Applitools\\RectangleSize' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/RectangleSize.php',
-        'Applitools\\Region' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/Region.php',
-        'Applitools\\RegionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/RegionProvider.php',
-        'Applitools\\RunningSession' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/RunningSession.php',
-        'Applitools\\ScaleMethod' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/scaling/ScaleMethod.php',
-        'Applitools\\ScaleProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/scaling/ScaleProvider.php',
-        'Applitools\\ScaleProviderFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/scaling/ScaleProviderFactory.php',
-        'Applitools\\ScaleProviderIdentityFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/scaling/ScaleProviderIdentityFactory.php',
-        'Applitools\\Selenium\\BordersAwareElementContentLocationProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/BordersAwareElementContentLocationProvider.php',
-        'Applitools\\Selenium\\BrowserNames' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/BrowserNames.php',
-        'Applitools\\Selenium\\ContextBasedScaleProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/ContextBasedScaleProvider.php',
-        'Applitools\\Selenium\\ContextBasedScaleProviderFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/ContextBasedScaleProviderFactory.php',
-        'Applitools\\Selenium\\CssTranslatePositionMemento' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/CssTranslatePositionMemento.php',
-        'Applitools\\Selenium\\CssTranslatePositionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/CssTranslatePositionProvider.php',
-        'Applitools\\Selenium\\ElementPositionMemento' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/ElementPositionMemento.php',
-        'Applitools\\Selenium\\ElementPositionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/ElementPositionProvider.php',
-        'Applitools\\Selenium\\Exceptions\\EyesDriverOperationException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/exceptions/EyesDriverOperationException.php',
-        'Applitools\\Selenium\\Exceptions\\NoFramesException' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/exceptions/NoFramesException.php',
-        'Applitools\\Selenium\\Eyes' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/Eyes.php',
-        'Applitools\\Selenium\\EyesKeyboard' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/triggers/EyesKeyboard.php',
-        'Applitools\\Selenium\\EyesMouse' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/triggers/EyesMouse.php',
-        'Applitools\\Selenium\\EyesRemoteWebElement' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/wrappers/EyesRemoteWebElement.php',
-        'Applitools\\Selenium\\EyesSeleniumAgentSetup' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/EyesSeleniumAgentSetup.php',
-        'Applitools\\Selenium\\EyesSeleniumUtils' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/EyesSeleniumUtils.php',
-        'Applitools\\Selenium\\EyesTargetLocator' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/wrappers/EyesTargetLocator.php',
-        'Applitools\\Selenium\\EyesTouchScreen' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/wrappers/EyesTouchScreen.php',
-        'Applitools\\Selenium\\EyesWebDriver' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/wrappers/EyesWebDriver.php',
-        'Applitools\\Selenium\\EyesWebDriverScreenshot' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/EyesWebDriverScreenshot.php',
-        'Applitools\\Selenium\\EyesWebDriverScreenshotFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/EyesWebDriverScreenshotFactory.php',
-        'Applitools\\Selenium\\FirefoxRegionPositionCompensation' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/FirefoxRegionPositionCompensation.php',
-        'Applitools\\Selenium\\FirefoxScreenshotImageProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/FirefoxScreenshotImageProvider.php',
-        'Applitools\\Selenium\\Frame' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/frames/Frame.php',
-        'Applitools\\Selenium\\FrameChain' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/frames/FrameChain.php',
-        'Applitools\\Selenium\\FullFrameOrElementRegionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/FullFrameOrElementRegionProvider.php',
-        'Applitools\\Selenium\\FullPageCaptureAlgorithm' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/FullPageCaptureAlgorithm.php',
-        'Applitools\\Selenium\\FullRegionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/FullRegionProvider.php',
-        'Applitools\\Selenium\\IRegionPositionCompensation' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/IRegionPositionCompensation.php',
-        'Applitools\\Selenium\\ImageProviderFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/ImageProviderFactory.php',
-        'Applitools\\Selenium\\ImageRotation' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/ImageRotation.php',
-        'Applitools\\Selenium\\MoveToRegionVisibilityStrategy' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/regionVisibility/MoveToRegionVisibilityStrategy.php',
-        'Applitools\\Selenium\\NopRegionVisibilityStrategy' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/regionVisibility/NopRegionVisibilityStrategy.php',
-        'Applitools\\Selenium\\NullRegionPositionCompensation' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/NullRegionPositionCompensation.php',
-        'Applitools\\Selenium\\OSNames' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/OSNames.php',
-        'Applitools\\Selenium\\RegionPositionCompensationFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/RegionPositionCompensationFactory.php',
-        'Applitools\\Selenium\\RegionVisibilityStrategy' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/regionVisibility/RegionVisibilityStrategy.php',
-        'Applitools\\Selenium\\SafariRegionPositionCompensation' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/SafariRegionPositionCompensation.php',
-        'Applitools\\Selenium\\SafariScreenshotImageProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/SafariScreenshotImageProvider.php',
-        'Applitools\\Selenium\\ScreenshotType' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/ScreenshotType.php',
-        'Applitools\\Selenium\\ScrollPositionMemento' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/ScrollPositionMemento.php',
-        'Applitools\\Selenium\\ScrollPositionProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/positioning/ScrollPositionProvider.php',
-        'Applitools\\Selenium\\StitchMode' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/StitchMode.php',
-        'Applitools\\Selenium\\TakesScreenshotImageProvider' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/TakesScreenshotImageProvider.php',
-        'Applitools\\Selenium\\UserAgent' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/UserAgent.php',
-        'Applitools\\Selenium\\WebDriverInfo' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/WebDriverInfo.php',
-        'Applitools\\Selenium\\WebDriverScreenshot' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/capture/WebDriverScreenshot.php',
-        'Applitools\\Selenium\\fluent\\FloatingRegionsBySelector' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/FloatingRegionsBySelector.php',
-        'Applitools\\Selenium\\fluent\\FrameLocator' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/FrameLocator.php',
-        'Applitools\\Selenium\\fluent\\ISeleniumCheckTarget' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/ISeleniumCheckTarget.php',
-        'Applitools\\Selenium\\fluent\\ISeleniumFrameCheckTarget' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/ISeleniumFrameCheckTarget.php',
-        'Applitools\\Selenium\\fluent\\RegionByElement' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/RegionByElement.php',
-        'Applitools\\Selenium\\fluent\\RegionsBySelector' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/RegionsBySelector.php',
-        'Applitools\\Selenium\\fluent\\SeleniumCheckSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/SeleniumCheckSettings.php',
-        'Applitools\\Selenium\\fluent\\Target' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.selenium.php/fluent/Target.php',
-        'Applitools\\ServerConnector' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/ServerConnector.php',
-        'Applitools\\ServerConnectorFactory' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/ServerConnectorFactory.php',
-        'Applitools\\ServerConnectorInterface' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/ServerConnectorInterface.php',
-        'Applitools\\SessionResults' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/SessionResults.php',
-        'Applitools\\SessionStartInfo' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/SessionStartInfo.php',
-        'Applitools\\SessionType' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/server/SessionType.php',
-        'Applitools\\SimplePropertyHandler' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/utils/SimplePropertyHandler.php',
-        'Applitools\\StartInfo' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/metadata/StartInfo.php',
-        'Applitools\\TestResults' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/TestResults.php',
-        'Applitools\\TestResultsStatus' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/TestResultsStatus.php',
-        'Applitools\\TextTrigger' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/triggers/TextTrigger.php',
-        'Applitools\\TimedAppOutput' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/TimedAppOutput.php',
-        'Applitools\\Trigger' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.common.php/Trigger.php',
-        'Applitools\\fluent\\CheckSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/CheckSettings.php',
-        'Applitools\\fluent\\FloatingRegionsByRectangle' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/FloatingRegionsByRectangle.php',
-        'Applitools\\fluent\\ICheckSettings' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/ICheckSettings.php',
-        'Applitools\\fluent\\ICheckSettingsInternal' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/ICheckSettingsInternal.php',
-        'Applitools\\fluent\\IGetFloatingRegions' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/IGetFloatingRegions.php',
-        'Applitools\\fluent\\IGetRegions' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/IGetRegions.php',
-        'Applitools\\fluent\\RegionByRectangle' => __DIR__ . '/..' . '/applitools/eyes.sdk.php/eyes.sdk.php/fluent/RegionByRectangle.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'ClassPosts' => __DIR__ . '/../..' . '/module/ClassPosts.php',
         'ClassUser' => __DIR__ . '/../..' . '/module/ClassUser.php',
+        'Codeception\\Exception\\ConnectionException' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Exception/ConnectionException.php',
+        'Codeception\\Exception\\ExternalUrlException' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Exception/ExternalUrlException.php',
+        'Codeception\\Lib\\Connector\\Guzzle' => __DIR__ . '/..' . '/codeception/module-phpbrowser/src/Codeception/Lib/Connector/Guzzle.php',
+        'Codeception\\Lib\\Connector\\Symfony' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Lib/Connector/Symfony.php',
+        'Codeception\\Lib\\Framework' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Lib/Framework.php',
+        'Codeception\\Lib\\InnerBrowser' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Lib/InnerBrowser.php',
+        'Codeception\\Lib\\Interfaces\\ScreenshotSaver' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Lib/Interfaces/ScreenshotSaver.php',
+        'Codeception\\Lib\\Interfaces\\SessionSnapshot' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Lib/Interfaces/SessionSnapshot.php',
+        'Codeception\\Module\\AbstractAsserts' => __DIR__ . '/..' . '/codeception/module-asserts/src/Codeception/Module/AbstractAsserts.php',
+        'Codeception\\Module\\Asserts' => __DIR__ . '/..' . '/codeception/module-asserts/src/Codeception/Module/Asserts.php',
+        'Codeception\\Module\\PhpBrowser' => __DIR__ . '/..' . '/codeception/module-phpbrowser/src/Codeception/Module/PhpBrowser.php',
+        'Codeception\\Module\\Symfony' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony.php',
+        'Codeception\\Module\\Symfony\\BrowserAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/BrowserAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\ConsoleAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/ConsoleAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\DoctrineAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/DoctrineAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\EventsAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/EventsAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\FormAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/FormAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\MailerAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/MailerAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\ParameterAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/ParameterAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\RouterAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/RouterAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\SecurityAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/SecurityAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\ServicesAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/ServicesAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\SessionAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/SessionAssertionsTrait.php',
+        'Codeception\\Module\\Symfony\\TwigAssertionsTrait' => __DIR__ . '/..' . '/codeception/module-symfony/src/Codeception/Module/Symfony/TwigAssertionsTrait.php',
+        'Codeception\\Module\\WebDriver' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Module/WebDriver.php',
+        'Codeception\\Util\\HttpCode' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Util/HttpCode.php',
+        'Codeception\\Util\\Shared\\Asserts' => __DIR__ . '/..' . '/codeception/lib-asserts/src/Codeception/Util/Shared/Asserts.php',
+        'Codeception\\Util\\Shared\\InheritedAsserts' => __DIR__ . '/..' . '/codeception/lib-asserts/src/Codeception/Util/Shared/InheritedAsserts.php',
         'Comment' => __DIR__ . '/../..' . '/module/Comment.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'ConnectDatabase' => __DIR__ . '/../..' . '/module/ConnectDatabase.php',
         'Email' => __DIR__ . '/../..' . '/src/Email.php',
+        'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -889,6 +960,7 @@ class ComposerStaticInitf1daa99309c01489b0f7f9eab965022f
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf1daa99309c01489b0f7f9eab965022f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf1daa99309c01489b0f7f9eab965022f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf1daa99309c01489b0f7f9eab965022f::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitf1daa99309c01489b0f7f9eab965022f::$classMap;
 
         }, null, ClassLoader::class);

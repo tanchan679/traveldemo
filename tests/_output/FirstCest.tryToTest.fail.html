@@ -1,0 +1,104 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>login user account </title>
+        <link rel="icon" href="./upload/logodulichht.png">
+        <link rel="stylesheet" href="./include/fontawesome/css/all.css">
+        <link rel="stylesheet" href="./include/style/bootstrap.css">
+        <link rel="stylesheet" href="include/mystyle45646.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Bangers&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&amp;display=swap" rel="stylesheet">
+              
+</head>
+<body style="  background-image: url('upload/hinh-anh-du-lich-ha-long.jpg'); " onload="resetStatus()">
+    <div class="navbar">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="./">
+                    <span><img src="./upload/logodulichht.png" style="width: 60px; height: 60px; margin-top: -15px;"></span>
+                    <span style="color: #f2f2f2; font-size: 25px;line-height: 100px;">TRAVEL VIETNAM</span>
+                </a>
+            </li>
+        </ul>
+       <ul class="nav">
+           <li class="line-navbar">
+               <a href="./">
+                   <h6 class="link-navbar">HOME</h6>
+               </a>
+           </li>
+           <li class="line-navbar">
+               <a href="./travel.php">
+                   <h6 class="link-navbar">TRAVEL</h6>
+               </a>
+           </li>
+           <li class="line-navbar">
+               <a href="./introduceVietnam.php">
+                   <h6 class="link-navbar">VIETNAM</h6>
+               </a>
+           </li>
+           <li class="line-navbar">
+               <a href="./contact.php">
+                   <h6 class="link-navbar">CONTACT</h6>
+               </a>
+           </li>
+       </ul>
+    </div>
+</div>
+    <br><br>
+    <div style="width: 100%; margin-bottom: 30px; margin-top: 30px; ">
+        <form class="from-dangky" method="post" action="#">
+            <div style="text-align: center">  <h3 style="color: #f2f2f2;">User login</h3></div>
+            <div class="form-group">
+                <label style="color: #f2f2f2;" for="">Email</label>
+                <input type="text" class="form-control" id="id_email" required="" placeholder="nguyenvana@gmail.com" name="email">
+            </div>
+            <div class="form-group">
+                <label style="color: #f2f2f2;" for="">password</label>
+                <input type="password" class="form-control" id="id_password" required="" placeholder="Enter your password" name="password">
+            </div>
+            <div style="text-align: center"><button style="margin-top: 10px;" class="btn btn-secondary" id="id_btlogin">Login</button></div>
+            <div style="text-align: right"><a href="./registration.php" style="" class="btn-linklogin">Registration</a></div>
+            <div style="color: red;" id="status_login" class="iflogin">Signin success</div>
+        </form>
+    </div>
+    
+    <br><br><br><br>
+      <style>
+      .fa{
+          font-size: 23px;
+          transition-duration: 1s;
+      }
+      .fa:hover{
+          color: #6f42c1;
+          transition-duration: 1s;
+      }
+
+  </style>
+<div class="footer">
+   <br><br>
+       <div style="height: 30px; ">
+        <a target="_blank" href="https://www.facebook.com/tanchan679"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" href="https://www.twitter.com/TanChannsl"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC5br0QjPF6VSHJkczLzuBUA"><i class="fa fa-youtube"></i></a>
+        <a target="_blank" href="https://www.instagram.com/tanchan1607"><i class="fa fa-instagram"></i></a>
+       </div>
+       <br>
+       <p style="color: #ccc;">© Dự án phát triển phần mềm - ICTU</p>
+       <div style="height: 10px;">
+   </div>
+   <div style="position: fixed; right: 10px; bottom: 10px;">
+            <a href="./login.php">
+                <img id="iconlogin-accout" src="./upload/login.png" class="img-login-accout" alt="Login">
+            </a>    </div>
+   </div>    <script>document.getElementById("status_login").innerHTML = "Signin success";</script><script>
+            setInterval(function(){ window.location="./account.php";}, 2000);
+            </script>
+function resetStatus() {
+    document.getElementById("status_login").innerHTML = "";
+}
+
+
+
+</body></html>

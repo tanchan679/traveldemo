@@ -1,0 +1,345 @@
+<html lang="en"><head>
+   <title>Đăng nhập</title>    <meta charset="UTF-8">
+    <link rel="icon" href="../upload/image/iconadmin.jpg">
+    <link rel="stylesheet" href="../include/style/mycss89.css">
+    <link rel="stylesheet" href="../include/style/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../include/script/ckeditor/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+    <link rel="stylesheet" href="../include/fontawesome/css/all.css">
+</head>
+<body style="background: #dedede">
+    <div class="Container">
+    <div class="box-menu">
+        <div class="administrator-logo">
+            <img style="width: 27px;  float: left; height: 100%;" src="../upload/image/iconadmin.jpg">
+            <a href="./"><p style="color: #FF7610; float: left">Administrators</p></a>
+        </div>
+
+       <!--
+         <form method="get" action="#">
+            <input name = "select" value="newposts" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#fff;">
+                    <i class="fas fa-plus-square"></i>
+                    Bài viết mới</div>
+            </button>
+        </form>
+       -->
+
+        <form method="get" action="#">
+            <input name="select" value="travelviewing" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#fff;">
+                    <i class="fab fa-pied-piper-square"></i>
+                    Địa điểm du lịch mới </div>
+            </button>
+        </form>
+
+       <!--
+        <form method="get" action="#">
+            <input name = "select" value="postmanagement" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#fff;">
+                    <i class="fas fa-tasks"></i>
+                    Quản lý bài viết</div>
+            </button>
+        </form>
+       -->
+        <form method="get" action="#">
+            <input name="select" value="travelviewingMana" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#fff;">
+                    <i class="fas fa-location-arrow"></i>
+                    Quản lý địa điểm du lịch </div>
+            </button>
+        </form>
+        <form method="get" action="#">
+            <input name="select" value="commentManagement" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#fff;">
+                    <i class="fas fa-comment-medical"></i>
+                    Quản lý bình luận</div>
+            </button>
+        </form>
+        <form method="get" action="#">
+            <input name="select" value="UserManagement" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#fff;">
+                    <i class="fas fa-user-cog"></i>
+                    Quản lý User</div>
+            </button>
+        </form>
+        <button onclick="hienthiweb()" class="btnkgvien">
+            <div class="line-menu" style="color:#fff;">
+                <i class="far fa-user-circle"></i>
+                Quản lý tài khoản admin <i style="color: #DCDCA4" class="fas fa-caret-down"></i></div>
+        </button>
+
+        <div id="tuychonweb" style="display: none">
+            <div style="margin-left: 18px;">
+                <form method="get" action="#">
+                    <input name="select" value="thaydoimatkhau" style="display: none">
+                    <button class="btnkgvien">
+                        <div class="line-menu-lv2" style="color:#f8f8f8;">
+                            <i class="fas fa-edit"></i>
+                            Thay đổi mật khẩu<div>
+                    </div></div></button>
+                </form>
+                <form method="get" action="#">
+                    <input name="select" value="thaydoisodienthoai" style="display: none">
+                    <button class="btnkgvien">
+                        <div class="line-menu-lv2" style="color:#f8f8f8;">
+                            <i class="fas fa-edit"></i>
+                            Thay số điện thoại</div>
+                    </button>
+                </form>
+                <form method="get" action="#">
+                    <input name="select" value="thaydoithongtin" style="display: none">
+                    <button class="btnkgvien">
+                        <div class="line-menu-lv2" style="color:#f8f8f8;">
+                            <i class="fas fa-edit"></i>
+                            Thay đổi thông tin</div>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+        <form method="post" action="#">
+            <input name="act" value="true" style="display: none">
+            <button class="btnkgvien">
+                <div class="line-menu" style="color:#ee1111;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Đăng xuất</div>
+            </button>
+        </form>
+
+    </div>
+
+    <div class="main-screen">
+        <div class="screen-menu">
+            <div style="margin-right: 10px;float: right;"><a class="link-home" href="../"><i style="padding-right: 5px;" class="fas fa-home">
+                    </i>Vào trang web</a> </div>
+        </div>
+        <div class="screen-slides">
+            <div style="background: #0056b3; height: 33px; color: #f2f2f2; font-size: 18px; padding-left: 10px; line-height: 33px; ">
+    <i class="fab fa-pied-piper-square"></i> Quản lý Comment
+</div>
+
+<br>
+<div style="display: none" id="num-rows">
+            14        </div><table style="width: 100%; margin: 5px;">
+    <tbody><tr style="font-weight: 600; color: #000; font-size: 18px;">
+        <td colspan="8" style="text-align: left">
+            <i class="fas fa-bars" style="margin-right: 3px;"></i> Danh sách Comment</td>
+    </tr>
+    <tr style="background: #fff; text-align: center">
+        <td style="color: #cc0000; font-weight: 500">STT</td>
+        <td style="color: #115095; font-weight: 500">Id</td>
+        <!-- <td style="color: #115095; font-weight: 500">Loại cmt</td> -->
+        <td style="color: #115095; font-weight: 500">Người dùng</td>
+        <td style="color: #115095; font-weight: 500">Id Bài viết</td>
+        <td style="color: #115095; font-weight: 500">Nội dung Cmt</td>
+        <td style="color: #115095; font-weight: 500">Hành động</td>
+    </tr>
+    <tr style="background: #e9ffff">
+    <td>0</td>
+    <td style="text-align: center">3</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">4</td>
+    <td><p>haha</p></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="3">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>1</td>
+    <td style="text-align: center">81</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">14</td>
+    <td><p>dgf</p></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="0" class="delcmbt btn btn-danger" id="81">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=0"><button  onClick="edititem(this.id)" id="0" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #e9ffff">
+    <td>2</td>
+    <td style="text-align: center">36</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>Comment from test case 1</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="36">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>3</td>
+    <td style="text-align: center">82</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">14</td>
+    <td><p>gfdgfd</p></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="0" class="delcmbt btn btn-danger" id="82">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=0"><button  onClick="edititem(this.id)" id="0" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #e9ffff">
+    <td>4</td>
+    <td style="text-align: center">37</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="37">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>5</td>
+    <td style="text-align: center">39</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>Comment from test case 1</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="39">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #e9ffff">
+    <td>6</td>
+    <td style="text-align: center">40</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="40">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>7</td>
+    <td style="text-align: center">41</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>javascript:void(document.cookie=”username=otherUser”)</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="41">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #e9ffff">
+    <td>8</td>
+    <td style="text-align: center">42</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>Comment from test case 1</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="42">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>9</td>
+    <td style="text-align: center">43</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="43">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #e9ffff">
+    <td>10</td>
+    <td style="text-align: center">44</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>javascript:void(document.cookie=”username=otherUser”)</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="44">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>11</td>
+    <td style="text-align: center">45</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>Comment from test case 1</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="45">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #e9ffff">
+    <td>12</td>
+    <td style="text-align: center">46</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td></td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="46">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr><tr style="background: #fff">
+    <td>13</td>
+    <td style="text-align: center">47</td><td style="text-align: center">admin</td>
+    <td style="text-align: center">8</td>
+    <td>javascript:void(document.cookie=”username=otherUser”)</td>
+    <td style="color: #b21f2d;  font-weight: 500; text-align: center">
+        <button onclick="deleteitemn(this.id, this.name)" name="1" class="delcmbt btn btn-danger" id="47">Xóa</button>
+        <!--<a href="?chucnang=suathongtinsach&id=1"><button  onClick="edititem(this.id)" id="1" class="btn btn-primary">Chỉnh sửa</button></a>
+               -->
+
+    </td>
+    </tr>        
+        <script>
+            var n = (parseInt(document.getElementById('num-rows').textContent));
+        </script>
+</tbody></table>
+
+<dialog id="xacnhanxoa" style="border: none; width: 500px;  box-shadow: 0px 0px 5px 5px #666; border-radius: 5px">
+    <p style="font-size: 18px;">Bạn có thực sự muốn xóa mục này!!</p>
+    <hr>
+    <button class="btn btn-danger" style="float: right; margin-left: 10px; padding: 5px;" id="huydelete">Hủy</button>
+    <form style="float: right">
+        <input name="select" value="commentManagement" style="display: none">
+        <input id="dele" name="dele" value="" style="display: none">
+        <input id="classify" name="classify" value="" style="display: none">
+        <button style="padding: 5px;" class="btn btn-primary" id="xacnhandelete">Xác nhận</button>
+    </form>
+</dialog>
+<script>
+    function deleteitemn(clicked_id, clicked_name) {
+        var xacnhan = document.getElementById('xacnhanxoa');
+        var id = document.getElementById(clicked_id);
+        var huydelete = document.getElementById('huydelete');
+        var dele = document.getElementById('dele');
+        dele.value = clicked_id;
+        var classify = document.getElementById('classify');
+        classify.value = clicked_name;
+        huydelete.addEventListener('click', function() {
+            xacnhan.close();
+        });
+        xacnhan.showModal();
+    }
+</script>
+        </div>
+    </div>
+</div>
+
+<script>
+    function hienthiweb() {
+        var getthe = document.getElementById('tuychonweb');
+        if (getthe.style.display=='none') getthe.style.display = 'block';
+        else getthe.style.display = 'none';
+
+    }
+</script>
+
+
+</body></html>

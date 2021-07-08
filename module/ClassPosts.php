@@ -1,5 +1,5 @@
 <?php
-    class ClassPosts{
+    class ClassPosts {
         private $getconect;
         public function __construct()
         {

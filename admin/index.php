@@ -16,7 +16,7 @@
     if(isset($_POST['email'])){
         $taikhaon = $_POST['email'];
         $pass = $_POST['password'];
-        include "../module/ConnectDatabase.php";
+        require_once "../module/ConnectDatabase.php";
         $getconect = new connectDatabase();
         $getconect = $getconect->connect();
         $sql = "SELECT password FROM user where id=0";
@@ -32,7 +32,7 @@
         unset($_SESSION['email']);
     }
     if(isset($_SESSION['loginadmin'])) include 'mannager.php';
-    else include 'login.html';
+    else require_once 'login.html';
     ?>
 </body>
 </html>

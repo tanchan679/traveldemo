@@ -115,18 +115,18 @@
             <?php
             if(isset($_GET['select'])){
                 $sl = $_GET['select'];
-               // if($sl === 'newposts') include "./control/newposts.php";
-                 if($sl === 'travelviewing') include "./control/travelviewing.php";
-                else if($sl === 'postmanagement') include "./control/postmanagement.php";
-                else if($sl === 'travelviewingMana') include "./control/travelviewingManagement.php";
-                else if($sl === 'thaydoimatkhau') include "./control/thaydoimatkhau.php";
-                else if($sl === 'thaydoisodienthoai') include "./control/thaydoisodienthoai.php";
-                else if($sl === 'thaydoithongtin') include "./control/thaydoithongtin.php";
-                else if($sl === 'commentManagement') include "./control/commentManagement.php";
-                else if($sl === 'UserManagement') include "./control/UserManagement.php";
-                else if($sl === 'edit') include "./control/EditPost.php";
-                else if($sl === 'edittravel') include "./control/EditTravelpost.php";
-                else if($sl === 'edituser') include "./control/quanlyuser.php";
+               // if($sl === 'newposts') include "./control/newposts-hide.php";
+                 if($sl === 'travelviewing') require_once "./control/addTravel.php";
+                else if($sl === 'postmanagement') require_once "./control/postmanagement-hide.php";
+                else if($sl === 'travelviewingMana') require_once "./control/travelviewingManagement.php";
+                else if($sl === 'thaydoimatkhau') require_once "./control/thaydoimatkhau.php";
+                else if($sl === 'thaydoisodienthoai') require_once "./control/thaydoisodienthoai.php";
+                else if($sl === 'thaydoithongtin') require_once "./control/thaydoithongtin.php";
+                else if($sl === 'commentManagement') require_once "./control/commentManagement.php";
+                else if($sl === 'UserManagement') require_once "./control/UserManagement.php";
+                else if($sl === 'edit') require_once "./control/EditPost-hide.php";
+                else if($sl === 'edittravel') require_once "./control/EditTravelpost.php";
+                else if($sl === 'edituser') require_once "./control/quanlyuser.php";
 
 
             }else{

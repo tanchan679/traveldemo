@@ -162,19 +162,20 @@
         <div style="background: #eee; padding:15px">
                     <h2>COMMENTS</h2>
                     <div style="width: 100%; border-radius: 3px; padding: 10px">
-                       <?php if(isset($_SESSION['email'])) echo ' <form method="post">
-                            <textarea name="cmt" id="cmt" style=" "></textarea>
+                       <?php if(isset($_SESSION['email'])) echo ' 
+                       <form method="post">
+                       <input type="text" name="cmt" id="cmt" class="form-control" style="width: 100%; height: 50px">
                             <div style="text-align: right; margin-top: 15px">
-                            <button class="btn btn-secondary">Comment</button> </div>
-                        </form>
-                        <script> CKEDITOR.replace(\'cmt\');</script>';
+                            <button class="btn btn-secondary" id="id_btcomment">Comment</button> </div>
+                        </form> 
+                        ';
                         else {
                             echo '<span>Please <a href="./login.php">login</a> to comment !!</span>';
                         }
                        ?> 
                        
                         <hr>
-                        <span style="font-size: 13px; margin-left:10px; position:relative; top:-20px;">Have all <?php echo $getCount ?> comments</span>
+                        <span style="font-size: 13px; margin-left:10px; position:relative; top:-20px;" id="id_count">Have all <?php echo $getCount ?> comments</span>
                      
                      <?php
                           

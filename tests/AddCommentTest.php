@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-final class ClassPosts extends TestCase
+final class AddCommentTest extends TestCase
 {
     public function test1AddCommentSuccessWithFullInput(): void                     
     {

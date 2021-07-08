@@ -38,5 +38,4 @@ final class RegisterTest extends TestCase
             $tmp->Registration('m1342a65@gmail.com','trollpass','javascript:void(document.cookie=”username=otherUser”)','test','test')    // troll stupid dev  failse
         );
     }
-
 }

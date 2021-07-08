@@ -38,10 +38,13 @@ class ClassUser
     }
     public function deleteUserByID($id)
     {
-        $sql = "delete from user where id = $id";
-        echo $sql;
+        $sql = "delete from user where email = '$id'";
+        $sql2 = "delete from comment_travelviewing where id_user = '$id'";
+        $sql3 = "delete from comment where id_user = '$id'";
         try {
             mysqli_query($this->conect, $sql);
+            mysqli_query($this->conect, $sql2);
+            mysqli_query($this->conect, $sql3);
             return true;
         } catch (Exception $e) {
             return false;

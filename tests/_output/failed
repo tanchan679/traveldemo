@@ -1,0 +1,6 @@
+tests\acceptance\ChangeInformation3Cest.php:tryToTest
+tests\acceptance\ChangeInformation4Cest.php:tryToTest
+tests\acceptance\Comment2Cest.php:tryToTest
+tests\acceptance\Comment3Cest.php:tryToTest
+tests\acceptance\Register3Cest.php:tryToTest
+tests\acceptance\Register4Cest.php:tryToTest
